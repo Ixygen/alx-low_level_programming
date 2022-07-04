@@ -33,10 +33,13 @@ init main(void)
 					putchar(32);
 				}
 				k++;
+
 			}
 			j++;
+
 		}
 		i++;
+
 	}
 	putchar(10);
 
