@@ -3,11 +3,12 @@
 /**
  * main - print triple combos
  *
- * Description: print triple digit combos
+ * Description: print triple ddigit combos
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+
+init main(void)
 {
 	int i, j, k;
 
@@ -36,10 +37,8 @@ int main(void)
 			j++;
 		}
 		i++;
-
 	}
-	putchar(100;
+	putchar(10);
 
-			return (0);
-			}
-
+	return (0);
+}
