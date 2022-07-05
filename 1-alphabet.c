@@ -1,12 +1,12 @@
 #include <main.h>
 
 /**
- * lowercaseAlphabets - print lower case alphabets
+ * print_alphabet - print lower case alphabets
  *
  * Return: 0 (Success)
  */
 
-void lowercaseAlphabets(void)
+void print_alphabet(void)
 {
 	int i;
 
