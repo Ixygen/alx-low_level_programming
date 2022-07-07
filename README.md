@@ -1,1 +1,1 @@
-This is the readme file of alx-low_level_programming
+This is the debugging readme file
