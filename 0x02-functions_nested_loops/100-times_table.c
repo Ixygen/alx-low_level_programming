@@ -4,7 +4,7 @@
  * main - sums multiples of 3 or 5
  *
  * Description: multiples between 0 and 1024
- * Return: Alawys(0) success
+ * Return: Always(0) success
  */
 
 int main(void)
@@ -25,6 +25,7 @@ int main(void)
 			continue;
 		}
 	}
+
 	printf("%d", total);
 	printf("\n");
 
