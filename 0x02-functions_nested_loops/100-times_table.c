@@ -1,33 +1,78 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - sums multiples of 3 or 5
- *
- * Description: multiples between 0 and 1024
- * Return: Always(0) success
+ * print_times_table - prints the n times table, starting with 0
+ * @n: number of the times table
  */
 
-int main(void)
+void print_times_table(int n)
 {
-	int start_num, end_num, total;
+	int i, j, k;
 
-	end_num = 1024;
-	total = 0;
-
-	for (start_num = 0; start_num < end_num; start_num++)
+	if (n >= 0 && n <= 15)
 	{
-		if ((start_num % 3 == 0) || (start_num % 5 == 0))
+		for (i = 0; i <= n; i++)
 		{
-			total = total + start_num;
-		}
-		else
-		{
-			continue;
+			for (j = 0; j <= n; j++)
+			{
+				k = j * i;
+				if (j == 0)
+				{
+					_putchar(k + '0');
+				}
+				else if (k < 10 && j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(k + '0');
+				}
+				else if (k >= 10 && k < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((k / 10) + '0');
+					_putchar((k % 10) + '0');
+				}
+				else if (k >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((k / 100) + '0');
+					_putchar(((k / 10) % 10) + '0');
+					_putchar((k % 10) + '0');
+				}
+			}
+			_putchar('\n');
 		}
 	}
-
-	printf("%d", total);
-	printf("\n");
-
-	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
