@@ -2,8 +2,7 @@
 
 /**
  * _isupper - check for uppercase character
- * @c -int type character
- * Description: check for uppercase character c.
+ * @c: the character to be checked
  * Return: 1 if the c character is uppercase otherwise return 0
  */
 
