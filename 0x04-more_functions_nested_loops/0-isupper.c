@@ -9,12 +9,5 @@
 
 int _isupper(int c)
 {
-	while (c = 'C')
-	{
-		_putchar(1);
-	}
-	else
-	{
-		_putchar(0);
-	}
+	return (c >= 'A' && c <= 'Z');
 }
