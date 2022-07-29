@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * reverse_arrayy - reverses the content of an array
+ * reverse_array - reverses the content of an array
  * of integers
- * @a: array.
- * @n: number of elements of the array.
+ * @a: first param
+ * @n: second param
  * Return: no return.
  */
 
@@ -21,4 +21,5 @@ void reverse_array(int *a, int n)
 			*(a + (j - 1)) = temp;
 		}
 	}
+	return (0);
 }
